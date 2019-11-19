@@ -1,0 +1,12 @@
+version: "1"
+workflows:
+  - name: # Unique identifier for your workflow (required)
+      sample-workflow
+    description: sample workflow
+    public: true
+    sourceCodeURL: "https://github.com/jplew/sample-workflow"
+    steps:
+      - node ./index.js
+    env:
+      - "USER=world"
+      - "OPS_ACCESS_TOKEN"
