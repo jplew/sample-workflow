@@ -4,9 +4,11 @@ workflows:
       sample-workflow
     description: sample workflow
     public: true
-    sourceCodeURL: "https://github.com/jplew/sample-workflow"
+    sourceCodeURL: "ifelsepodcast.com"
     steps:
-      - node ./index.js
+      - echo hello 1
+      - echo hello 2
+      - echo hello 3
     env:
       - "USER=world"
       - "OPS_ACCESS_TOKEN"
